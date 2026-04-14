@@ -193,8 +193,130 @@
 # print("Max:", max_num)
 # print("Odd Sum:", odd_sum)
 
-b = input()
+# #Assignment 2
+# 1) 
+# nums = list(map(int, input().split())) 
+# largest = nums[0] 
+# second = nums[0] 
 
-print((b[::-1]))
+# for x in nums: 
+#     if x > largest: 
+#         second = largest 
+#         largest = x 
+#     elif x > second and x != largest: 
+#         second = x 
+# print(second) 
+ 
+# 2) 
+# L = [1, 2, 3, 4, 5] 
+# L = [L[-1]] + L[:-1] 
+
+# print(L) 
+
+
+# 3) 
+# nums = list(map(int, input().split())) 
+# even = [] 
+# odd = [] 
+# for x in nums: 
+#     if x % 2 == 0: 
+#         even.append(x) 
+#     else: 
+#         odd.append(x) 
+
+# print("Even:", even) 
+# print("Odd:", odd) 
+ 
+
+ 
+# 4) 
+# L = [[1, 2], [3, 4], [5]] 
+# flat = [] 
+
+# for part in L: 
+#     for x in part: 
+#         flat.append(x) 
+
+# print(flat) 
+ 
+# 5) 
+# t = (1, 2, 2, 3, 2, 4) 
+# print(t.count(2)) 
+ 
+
+ 
+# 6)  
+# t = (1, 2, 3) 
+# lst = list(t) 
+# lst.append(4) 
+# t = tuple(lst) 
+
+# print(t) 
+
+# 7) 
+# t = (10, 20, 30) 
+# a, b, c = t 
+# print(a) 
+# print(b) 
+# print(c) 
+
+# 8) 
+# t = ((1, 5), (2, 3), (7, 1)) 
+# max_tuple = t[0] 
+
+# for x in t: 
+#     if sum(x) > sum(max_tuple): 
+#         max_tuple = x 
+# print(max_tuple) 
+
+# 9) 
+# nums = [] 
+# for i in range(10): 
+#     nums.append(int(input())) 
+# unique = set(nums) 
+# print(unique) 
+
+# 10) 
+# A = {1, 2} 
+# B = {1, 2, 3, 4} 
+# print(A.issubset(B)) 
+
+# 11) 
+# A = {1, 2, 3} 
+# B = {3, 4, 5} 
+# print(A.symmetric_difference(B)) 
+
+# 12) 
+# s = "programming" 
+# print(set(s)) 
+
+
+# 13) 
+# L = [2, 7, 11, 15] 
+# target = 9 
+# for i in range(len(L)): 
+#     for j in range(i + 1, len(L)): 
+#         if L[i] + L[j] == target: 
+#             print(L[i], L[j]) 
+
+# 14) 
+
+# L = [1, 2, 2, 3, 4, 4, 5] 
+# result = [] 
+
+# for x in L: 
+#     if L.count(x) == 1: 
+#         result.append(x) 
+
+# print(result) 
+
+# 15) 
+# L1 = [1, 2, 3, 4] 
+# L2 = [2, 3, 5] 
+# L3 = [2, 3, 6] 
+# common = list(set(L1) & set(L2) & set(L3)) 
+# print(common) 
+ 
+ 
 
 
