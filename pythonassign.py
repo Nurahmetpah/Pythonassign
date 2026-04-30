@@ -225,7 +225,7 @@
 #         odd.append(x) 
 
 # print("Even:", even) 
-# print("Odd:", odd) 
+# print("Odd:", odd)    
  
 
  
@@ -316,7 +316,26 @@
 # L3 = [2, 3, 6] 
 # common = list(set(L1) & set(L2) & set(L3)) 
 # print(common) 
- 
- 
 
 
+
+
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def translate(self, dx, dy):
+        self.x = self.x + dx
+        self.y = self.y + dy
+
+    def __str__(self):
+        return f"({self.x}, {self.y})"
+
+
+p1 = Point(2, 3)
+print(p1)
+
+p1.translate(5, -1)
+print(p1)
