@@ -1,0 +1,22 @@
+class Song:
+    def __init__(self, name, duration):
+        self.name = name
+        self.duration = duration
+    def __str__(self):
+        return f"{self.name} - {self.duration}"
+    def rating(self, stars):
+        return f"{self.name} has a rating of {stars} stars"
+    def recommended(self,stars):
+        if  stars >= 4:
+            return f"{self.name} is recommended"
+        else:
+            return f"{self.name} is not recommended"
+        
+r = Song("Imagine", 3.5)
+rating = r.rating(5)
+recommended = r.recommended(5)
+print(rating)
+print(recommended)
+
+
+
