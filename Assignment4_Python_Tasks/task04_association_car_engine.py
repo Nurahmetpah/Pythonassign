@@ -16,6 +16,6 @@ class Car:
 
 
 if __name__ == "__main__":
-    engine = Engine(300)
+    engine = Engine(400)
     car = Car("BMW", engine)
     car.show_car()

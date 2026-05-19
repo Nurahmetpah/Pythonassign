@@ -1,22 +1,20 @@
-class Song:
-    def __init__(self, name, duration):
+class Employee:
+    def __init__(self, name):
         self.name = name
-        self.duration = duration
-    def __str__(self):
-        return f"{self.name} - {self.duration}"
-    def rating(self, stars):
-        return f"{self.name} has a rating of {stars} stars"
-    def recommended(self,stars):
-        if  stars >= 4:
-            return f"{self.name} is recommended"
-        else:
-            return f"{self.name} is not recommended"
         
-r = Song("Imagine", 3.5)
-rating = r.rating(5)
-recommended = r.recommended(5)
-print(rating)
-print(recommended)
+    def show_employee(self):
+        print(f"Employee Name: {self.name}, Position: New Employee")
+class Manager(Employee):
+    def show_employee(self):
+        print(f"Employee Name: {self.name}, Position: Manager")
+class Developer(Employee):
+    def show_employee(self):
+        print(f"Employee Name: {self.name}, Position: Developer")
+        
 
-
-
+manager = Manager("Nurahmet")
+developer = Developer("Ayan")
+print("Manager:")
+manager.show_employee()
+print("Developer:")
+developer.show_employee()
